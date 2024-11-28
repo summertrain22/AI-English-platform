@@ -1,170 +1,132 @@
-/* Reset and Box-sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f9;
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #009688;
-    padding: 20px 0;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-header nav ul li a {
-    font-weight: 500;
-    font-size: 18px;
-    color: #fff;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-}
-
-header nav ul li a:hover {
-    background-color: #00796b;
-}
-
-/* Banner Section */
-.banner {
+    background-color: #007BFF;
+    padding: 20px;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #00796b;
     color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.banner h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.banner p {
-    font-size: 1.2rem;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Features Section */
-.features {
-    padding: 60px 20px;
-    background-color: #ffffff;
-    text-align: center;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
 }
 
-.features h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #009688;
+nav ul li a:hover {
+    color: #ffd700;
 }
 
-.feature-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+/* Hero Section */
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .card {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 8px;
     padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    width: 80%;
+    width: 60%;
     max-width: 150px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.course-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.card p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Learning Resources Section */
-.resources {
-    padding: 60px 20px;
-    background-color: #e0f2f1;
-    text-align: center;
-}
-
-.resources h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #00796b;
-}
-
-.resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.resource-item {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.course-card {
+    background-color: #ffcc00;
     padding: 20px;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.resource-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.resource-item p {
-    font-size: 1rem;
-    color: #555;
+.course-card h3 {
+    color: #333;
 }
 
 /* Footer */
 footer {
-    background-color: #009688;
+    background-color: #007BFF;
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-    font-size: 1rem;
-}
-
-/* Media Queries for Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .feature-cards, .resource-grid {
-        grid-template-columns: 1fr 1fr;
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .card-container, .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .course-card {
+        width: 80%;
+        margin-bottom: 20px;
     }
 }
