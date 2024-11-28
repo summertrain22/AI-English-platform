@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人工智能辅助英语学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header/Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#features">功能介绍</a></li>
+                <li><a href="#courses">课程模块</a></li>
+                <li><a href="#resources">资源库</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section id="home">
+            <h1>欢迎来到人工智能辅助英语学习平台</h1>
+            <p>利用人工智能技术，全面提升您的英语能力，包括单词记忆、语法练习、听力理解等。</p>
+        </section>
+
+        <section id="features">
+            <h2>平台功能</h2>
+            <ul>
+                <li><strong>单词记忆：</strong>AI辅助记忆法与复习计划，帮助学生巩固单词记忆。</li>
+                <li><strong>语法练习：</strong>互动式语法练习，提供即时反馈与改正。</li>
+                <li><strong>听力理解：</strong>听力材料与自动评分，提升听力理解能力。</li>
+                <li><strong>职场英语：</strong>求职面试与商务交流模拟，针对性强化职场英语技能。</li>
+                <li><strong>学术英语：</strong>论文写作与会议发言训练，助力学术英语能力提升。</li>
+                <li><strong>跨文化学习：</strong>提供中外文化对比案例，帮助学习者掌握跨文化交流技巧。</li>
+            </ul>
+        </section>
+
+        <section id="courses">
+            <h2>课程模块</h2>
+            <p>平台提供从基础到高级的各类英语课程，帮助学生根据自己的需求进行个性化学习。</p>
+            <ul>
+                <li>基础英语：从日常对话到基础语法学习。</li>
+                <li>高级英语：学术写作、会议口语等进阶课程。</li>
+                <li>职场英语：求职技巧与商务英语精练课程。</li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2>学习资源库</h2>
+            <p>丰富的学习资源，涵盖学术、职场、生活等多场景语言需求，随时获取最新学习材料。</p>
+        </section>
+
+        <section id="contact">
+            <h2>联系我们</h2>
+            <p>如有任何问题，欢迎通过以下方式联系我们：</p>
+            <ul>
+                <li>邮箱：support@englishplatform.com</li>
+                <li>电话：123-456-7890</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 人工智能辅助英语学习平台 | 保留所有权利</p>
+    </footer>
+
+</body>
+</html>
