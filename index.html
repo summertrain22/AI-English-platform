@@ -1,77 +1,95 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>人工智能辅助英语学习平台</title>
-    <!-- Google Font: Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Linking to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
+
+    <!-- Header/Navbar -->
     <header>
         <nav>
             <ul>
-                <li><a href="#features">平台功能</a></li>
-                <li><a href="#resources">学习资源</a></li>
-                <li><a href="#about">关于我们</a></li>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#features">功能介绍</a></li>
+                <li><a href="#courses">课程模块</a></li>
+                <li><a href="#resources">资源库</a></li>
+                <li><a href="#contact">联系我们</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Banner -->
-    <section class="banner">
-        <h1>智能化学习，助力您的英语提升</h1>
-        <p>我们的平台为您提供全方位的英语学习资源，结合人工智能技术，实现个性化的学习体验。</p>
-    </section>
+    <!-- Main content -->
+    <main>
+        <section id="home" class="section">
+            <h1>欢迎来到人工智能辅助英语学习平台</h1>
+            <p>通过人工智能技术全面提升您的英语能力，包括单词记忆、语法练习、听力理解等。</p>
+            <img src="images/ai-platform.jpg" alt="AI Learning Platform" class="hero-image">
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>平台功能</h2>
-        <div class="feature-cards">
-            <div class="card">
-                <img src="images/word-memory.png" alt="单词记忆">
-                <h3>单词记忆</h3>
-                <p>通过AI技术，帮助您高效记忆单词，提升词汇量。</p>
+        <section id="features" class="section">
+            <h2>平台功能</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/word-memory.png" alt="单词记忆">
+                    <h3>单词记忆</h3>
+                    <p>AI辅助记忆法与复习计划，帮助学生巩固单词记忆。</p>
+                </div>
+                <div class="card">
+                    <img src="images/grammar-practice.png" alt="语法练习">
+                    <h3>语法练习</h3>
+                    <p>互动式语法练习，提供即时反馈与改正。</p>
+                </div>
+                <div class="card">
+                    <img src="images/listening.png" alt="听力理解">
+                    <h3>听力理解</h3>
+                    <p>通过听力材料与自动评分，提升听力理解能力。</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="images/grammar-practice.png" alt="语法练习">
-                <h3>语法练习</h3>
-                <p>智能语法检测，提供个性化的语法练习，帮助您掌握语法规则。</p>
-            </div>
-            <div class="card">
-                <img src="images/listening.png" alt="听力理解">
-                <h3>听力理解</h3>
-                <p>根据您的学习进度提供定制化的听力训练，提升听力理解能力。</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Learning Resources Section -->
-    <section id="resources" class="resources">
-        <h2>学习资源</h2>
-        <div class="resource-grid">
-            <div class="resource-item">
-                <h3>职场英语</h3>
-                <p>求职面试、商务交流等实用英语技能。</p>
+        <section id="courses" class="section">
+            <h2>课程模块</h2>
+            <p>平台提供从基础到高级的各类英语课程，帮助学生根据自己的需求进行个性化学习。</p>
+            <div class="course-list">
+                <div class="course-card">
+                    <h3>基础英语</h3>
+                    <p>从日常对话到基础语法学习。</p>
+                </div>
+                <div class="course-card">
+                    <h3>高级英语</h3>
+                    <p>学术写作、会议口语等进阶课程。</p>
+                </div>
+                <div class="course-card">
+                    <h3>职场英语</h3>
+                    <p>求职技巧与商务英语精练课程。</p>
+                </div>
             </div>
-            <div class="resource-item">
-                <h3>学术英语</h3>
-                <p>论文写作、会议发言等学术场合的英语使用。</p>
-            </div>
-            <div class="resource-item">
-                <h3>中外文化对比</h3>
-                <p>中外文化差异与语言使用的深入对比，提升跨文化沟通能力。</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="resources" class="section">
+            <h2>学习资源库</h2>
+            <p>丰富的学习资源，涵盖学术、职场、生活等多场景语言需求，随时获取最新学习材料。</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>联系我们</h2>
+            <p>如有任何问题，欢迎通过以下方式联系我们：</p>
+            <ul>
+                <li>邮箱：support@englishplatform.com</li>
+                <li>电话：123-456-7890</li>
+            </ul>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 人工智能英语学习平台 | All Rights Reserved</p>
+        <p>&copy; 2024 人工智能辅助英语学习平台 | 保留所有权利</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
