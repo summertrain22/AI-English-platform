@@ -1,13 +1,16 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #007BFF;
     padding: 20px;
     text-align: center;
+    color: white;
 }
 
 nav ul {
@@ -26,16 +29,49 @@ nav ul li a {
     font-size: 18px;
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #fff;
-    border-radius: 8px;
+h1, h2 {
+    font-size: 2rem;
+    color: #333;
 }
 
+h2 {
+    margin-top: 30px;
+}
+
+/* Main content section */
+.section {
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Footer */
 footer {
-    text-align: center;
     background-color: #007BFF;
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
 }
