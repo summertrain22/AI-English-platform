@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>人工智能辅助英语学习平台</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,30 +26,48 @@
     <main>
         <section id="home" class="section">
             <h1>欢迎来到人工智能辅助英语学习平台</h1>
-            <p>利用人工智能技术，全面提升您的英语能力，包括单词记忆、语法练习、听力理解等。</p>
-            <img src="images/ai-platform.jpg" alt="AI Learning Platform">
+            <p>通过人工智能技术全面提升您的英语能力，包括单词记忆、语法练习、听力理解等。</p>
+            <img src="images/ai-platform.jpg" alt="AI Learning Platform" class="hero-image">
         </section>
 
         <section id="features" class="section">
             <h2>平台功能</h2>
-            <ul>
-                <li><strong>单词记忆：</strong>AI辅助记忆法与复习计划，帮助学生巩固单词记忆。</li>
-                <li><strong>语法练习：</strong>互动式语法练习，提供即时反馈与改正。</li>
-                <li><strong>听力理解：</strong>听力材料与自动评分，提升听力理解能力。</li>
-                <li><strong>职场英语：</strong>求职面试与商务交流模拟，针对性强化职场英语技能。</li>
-                <li><strong>学术英语：</strong>论文写作与会议发言训练，助力学术英语能力提升。</li>
-                <li><strong>跨文化学习：</strong>提供中外文化对比案例，帮助学习者掌握跨文化交流技巧。</li>
-            </ul>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/word-memory.png" alt="单词记忆">
+                    <h3>单词记忆</h3>
+                    <p>AI辅助记忆法与复习计划，帮助学生巩固单词记忆。</p>
+                </div>
+                <div class="card">
+                    <img src="images/grammar-practice.png" alt="语法练习">
+                    <h3>语法练习</h3>
+                    <p>互动式语法练习，提供即时反馈与改正。</p>
+                </div>
+                <div class="card">
+                    <img src="images/listening.png" alt="听力理解">
+                    <h3>听力理解</h3>
+                    <p>通过听力材料与自动评分，提升听力理解能力。</p>
+                </div>
+            </div>
         </section>
 
         <section id="courses" class="section">
             <h2>课程模块</h2>
             <p>平台提供从基础到高级的各类英语课程，帮助学生根据自己的需求进行个性化学习。</p>
-            <ul>
-                <li>基础英语：从日常对话到基础语法学习。</li>
-                <li>高级英语：学术写作、会议口语等进阶课程。</li>
-                <li>职场英语：求职技巧与商务英语精练课程。</li>
-            </ul>
+            <div class="course-list">
+                <div class="course-card">
+                    <h3>基础英语</h3>
+                    <p>从日常对话到基础语法学习。</p>
+                </div>
+                <div class="course-card">
+                    <h3>高级英语</h3>
+                    <p>学术写作、会议口语等进阶课程。</p>
+                </div>
+                <div class="course-card">
+                    <h3>职场英语</h3>
+                    <p>求职技巧与商务英语精练课程。</p>
+                </div>
+            </div>
         </section>
 
         <section id="resources" class="section">
@@ -69,6 +88,8 @@
     <footer>
         <p>&copy; 2024 人工智能辅助英语学习平台 | 保留所有权利</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
